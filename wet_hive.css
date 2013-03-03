@@ -1,0 +1,12 @@
+/* Sample custom styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+.txp-header h1 {
+    background-image: url("http://placekitten.com/g/280/40") !important;
+}
