@@ -24,7 +24,7 @@ h3. Frequently Asked Questions
 Q: Can I change the 'wet_hive' name to something else?
 A: Yes. Just rename both the directory /textpattern/theme/wet_hive and the file /textpattern/theme/wet_hive/wet_hive.php to your liking.
 
-Q: Can I add more than one style sheet, remove the 'Roboto' font, or add a custom Javascript file to the <head>?
+Q: Can I add more than one style sheet, remove the 'Roboto' font, or add a custom Javascript file to the &lt;head&gt;?
 A: Yes. Look into the html_head() function in wet_hive.php.
 
 Q: How can I uninstall this theme?
