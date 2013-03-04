@@ -67,7 +67,7 @@ class wet_hive_theme extends hive_theme
 			// Use all styles and scripts from the parent theme
 			parent::html_head().
 			// Add a font resource
-			"<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>".
+			"<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic'>".
 			// Overwrite the parent theme's styles with my own custom styles
 			"<link rel='stylesheet' href='".$myurl."wet_hive.css'>";
 	}
