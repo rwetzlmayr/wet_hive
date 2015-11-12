@@ -3,13 +3,17 @@
 /*
 h1. Wet Hive theme for the Textpattern Content Management System
 
-Copyright (C) 2013 Robert Wetzlmayr
+Copyright (C) 2013-2015 Robert Wetzlmayr
 
 This theme demonstrates how to amend and customize "Hive", one of the core admin-side themes.
 
 It serves as a starting point for your own customizations and is not meant to be complete (or aesthetically pleasing).
 
 You customizations are stored separately from the core theme and will thus survive any updates to core.
+
+h3. Requirements
+
+# Textpattern 4.6+
 
 h3. Installation
 
@@ -18,7 +22,7 @@ h3. Installation
 # Copy 'wet_hive.php' and the accompanying style sheet 'wet_hive.css' into /textpattern/theme/wet_hive.
 # Go to the preferences tab and change the admin-side theme to 'Wet_hive'.
 # If all went well:
-## A kitten will show up instead of the top-left Textpattern logo
+## A "vulcan salute":https://en.wikipedia.org/wiki/Vulcan_salute will show up instead of the top-left Textpattern logo
 ## Your admin-side's base font will be set to 'Roboto'.
 # Add your own custom styles to /textpattern/theme/wet_hive/custom.css and design away...
 
@@ -53,7 +57,7 @@ if (!defined('txpinterface'))
 }
 
 // Pull in the parent theme
-theme::based_on('hive');
+\Textpattern\Admin\Theme::based_on('hive');
 
 // Define this theme's specialities
 class wet_hive_theme extends hive_theme
@@ -66,9 +70,11 @@ class wet_hive_theme extends hive_theme
 		return
 			// Use all styles and scripts from the parent theme
 			parent::html_head().
-			// Add a font resource
+			// Add a font resource.
 			"<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic'>".
-			// Overwrite the parent theme's styles with my own custom styles
+			// Add some icons, too.
+			"<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>".
+			// Overwrite the parent theme's styles with my own custom styles.
 			"<link rel='stylesheet' href='".$myurl."wet_hive.css'>";
 	}
 
@@ -77,7 +83,7 @@ class wet_hive_theme extends hive_theme
 		return array(
 			'author'      => 'Robert Wetzlmayr',
 			'author_uri'  => 'http://wetzlmayr.com/',
-			'version'     => '0.1',
+			'version'     => '0.2',
 			'description' => 'Textpattern Wet Hive Theme',
 			'help'        => 'http://textpattern.com/admin-theme-help',
 		);
