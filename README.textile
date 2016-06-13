@@ -1,6 +1,6 @@
 h1. Wet Hive theme for the Textpattern Content Management System
 
-Copyright (C) 2013-2015 Robert Wetzlmayr
+Copyright (C) 2013-2016 Robert Wetzlmayr
 
 This theme demonstrates how to amend and customize "Hive", one of the core admin-side themes.
 
@@ -18,9 +18,7 @@ h3. Installation
 # Create a 'wet_hive' directory in /textpattern/theme.
 # Copy 'wet_hive.php' and the accompanying style sheet 'wet_hive.css' into /textpattern/theme/wet_hive.
 # Go to the preferences tab and change the admin-side theme to 'Wet_hive'.
-# If all went well:
-## A "vulcan salute":https://en.wikipedia.org/wiki/Vulcan_salute will show up instead of the top-left Textpattern logo
-## Your admin-side's base font will be set to 'Roboto'.
+# If all went well, your admin-side's base font will be set to 'Noto'.
 # Add your own custom styles to /textpattern/theme/wet_hive/custom.css and design away...
 
 h3. Frequently Asked Questions

@@ -1,29 +1,8 @@
 /* Sample custom styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Serif', serif;;
 }
 
 h1, h2, h3 {
     font-weight: normal;
-}
-
-.txp-header h1 {
-    background-image: none !important;
-}
-
-.txp-header h1::before {
-    content: "";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    font-size-adjust: none;
-    font-stretch: normal;
-    font-feature-settings: normal;
-    font-language-override: normal;
-    font-kerning: auto;
-    font-synthesis: weight style;
-    font-variant: normal;
-    font-size: 1.33em;
-    text-rendering: auto;
 }

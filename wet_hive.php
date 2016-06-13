@@ -3,7 +3,7 @@
 /*
 h1. Wet Hive theme for the Textpattern Content Management System
 
-Copyright (C) 2013-2015 Robert Wetzlmayr
+Copyright (C) 2013-2016 Robert Wetzlmayr
 
 This theme demonstrates how to amend and customize "Hive", one of the core admin-side themes.
 
@@ -21,9 +21,7 @@ h3. Installation
 # Create a 'wet_hive' directory in /textpattern/theme.
 # Copy 'wet_hive.php' and the accompanying style sheet 'wet_hive.css' into /textpattern/theme/wet_hive.
 # Go to the preferences tab and change the admin-side theme to 'Wet_hive'.
-# If all went well:
-## A "vulcan salute":https://en.wikipedia.org/wiki/Vulcan_salute will show up instead of the top-left Textpattern logo
-## Your admin-side's base font will be set to 'Roboto'.
+# If all went well, your admin-side's base font will be set to 'Noto'.
 # Add your own custom styles to /textpattern/theme/wet_hive/custom.css and design away...
 
 h3. Frequently Asked Questions
@@ -65,15 +63,13 @@ class wet_hive_theme extends hive_theme
 	function html_head()
 	{
 		$myurl = $this->url;
-		$this->url = 'theme/hive/';
+		$this->url = './admin-themes/hive/';
 
 		return
 			// Use all styles and scripts from the parent theme
 			parent::html_head().
 			// Add a font resource.
-			"<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic'>".
-			// Add some icons, too.
-			"<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>".
+			"<link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>".
 			// Overwrite the parent theme's styles with my own custom styles.
 			"<link rel='stylesheet' href='".$myurl."wet_hive.css'>";
 	}
@@ -83,7 +79,7 @@ class wet_hive_theme extends hive_theme
 		return array(
 			'author'      => 'Robert Wetzlmayr',
 			'author_uri'  => 'http://wetzlmayr.com/',
-			'version'     => '0.2',
+			'version'     => '0.3',
 			'description' => 'Textpattern Wet Hive Theme',
 			'help'        => 'http://textpattern.com/admin-theme-help',
 		);
